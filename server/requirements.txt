@@ -14,10 +14,14 @@ langchain-groq
 pinecone
 
 # Embeddings
+langchain-huggingface
+langchain-text-splitters
 # sentence-transformers
 # langchain-google-generative-ai (not used - using HuggingFaceEmbeddings instead)
 # langchain-google-genai
-
+transformers
+huggingface_hub
+sentence-transformers
 # PDF Parsing
 PyPDF  # backend for PyPDFLoader via langchain_community
 

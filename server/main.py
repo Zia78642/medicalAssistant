@@ -22,6 +22,11 @@ app.add_middleware(
 # middleware exception handlers
 app.middleware("http")(catch_exception_middleware)
 
+# Health check endpoint
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "Medical Assistant API is running"}
+
 # routers
 
 # 1. upload pdfs documents
